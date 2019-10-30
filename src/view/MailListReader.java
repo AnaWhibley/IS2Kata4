@@ -16,11 +16,18 @@ public class MailListReader {
         try{
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
             
-            while(true){
+            /*while(true){
                 String line = reader.readLine();
                 if(line == null){
                     break;
                 }
+                if(Mail.isMail(line)) {
+                    list.add(new Mail(line));
+                }
+            }*/
+            
+            IteratorReader iteratorReader = new IteratorReader(reader);
+            for(String line : iteratorReader) {
                 if(Mail.isMail(line)) {
                     list.add(new Mail(line));
                 }
