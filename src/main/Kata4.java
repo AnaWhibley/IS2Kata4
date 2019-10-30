@@ -1,4 +1,7 @@
-package kata4;
+package main;
+
+import view.HistogramDisplay;
+import model.Histogram;
 
 public class Kata4 {
 

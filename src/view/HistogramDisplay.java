@@ -1,5 +1,6 @@
-package kata4;
+package view;
 
+import model.Histogram;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartFactory;
